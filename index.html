@@ -23,6 +23,11 @@ section{padding:92px 0;border-top:1px solid var(--line)}.sectionhead{display:fle
 .certgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.cert{display:flex;gap:16px;align-items:center;padding:21px;border:1px solid var(--line);border-radius:12px;background:rgba(16,24,39,.68)}.certicon{height:46px;width:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:12px;background:rgba(124,156,255,.12);color:#a9bcff;font-size:1.25rem}.cert h3{font-size:.94rem;margin:0}.cert p{margin:4px 0 0;color:var(--muted);font-size:.78rem}
 .edu{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.eduitem{padding:20px;border:1px solid var(--line);border-radius:12px;background:rgba(16,24,39,.68)}.eduitem h3{font-size:.96rem;margin:0}.eduitem p{color:var(--muted);font-size:.82rem;margin:5px 0 0}.eduitem span{color:var(--cyan);font: .72rem "DM Mono",monospace}
 .contact{padding:65px;border-radius:20px;border:1px solid rgba(104,225,223,.22);background:radial-gradient(ellipse at 85% 0%,rgba(104,225,223,.12),transparent 45%),linear-gradient(135deg,rgba(18,32,50,.95),rgba(12,20,33,.95));display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.06em;line-height:1.1;margin:10px 0}.contact p{color:var(--muted);max-width:510px}.contactlinks{display:flex;flex-direction:column;gap:11px;min-width:220px}.contactlinks a{padding:12px 15px;border:1px solid var(--line);border-radius:8px;font-size:.85rem}.contactlinks a:hover{border-color:var(--cyan);color:var(--cyan)}
+.contactlinks .socials{display:flex;gap:12px;margin-top:4px}
+.contactlinks .social-link{width:46px;height:46px;min-width:46px;padding:0;display:grid;place-items:center;border:1px solid rgba(104,225,223,.3);border-radius:12px;background:rgba(104,225,223,.06);color:var(--cyan);transition:transform .2s,background .2s,border-color .2s}
+.contactlinks .social-link svg{width:21px;height:21px;display:block}
+.contactlinks .social-link:hover{transform:translateY(-3px);background:rgba(104,225,223,.15);border-color:var(--cyan);color:var(--text)}
+
 footer{padding:28px 0;color:#718198;font-size:.76rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
 @media(max-width:850px){.hero{grid-template-columns:1fr;gap:15px;padding-top:70px}.visual{min-height:390px}.stats{grid-template-columns:repeat(2,1fr)}.aboutgrid{grid-template-columns:1fr}.highlights{grid-template-columns:1fr 1fr}.contact{padding:38px;flex-direction:column;align-items:flex-start}.contactlinks{width:100%}}
@@ -65,7 +70,21 @@ footer{padding:28px 0;color:#718198;font-size:.76rem}.foot{display:flex;justify-
 
 <section id="resume" class="reveal"><div class="contact" style="padding:42px 48px"><div><div class="mono">07 / MY RESUME</div><h2>Want the details<br>in one place?</h2><p>Download my resume to explore my experience, technical skills, certifications, and education.</p></div><div class="contactlinks"><a class="btn primary" href="Parth_Panchal_Resume.pdf" download="Parth_Panchal_Resume.pdf" style="text-align:center">↓ &nbsp; Download my resume</a><a href="Parth_Panchal_Resume.pdf" target="_blank" rel="noopener noreferrer">▤ &nbsp; Preview resume ↗</a></div></div></section>
 
-<section id="contact" class="reveal"><div class="contact"><div><div class="mono">08 / CONTACT</div><h2>Let's build something<br>reliable together.</h2><p>Open to connecting about cloud infrastructure, Linux engineering, automation, and new opportunities.</p></div><div class="contactlinks"><a href="mailto:parthp2172@gmail.com">✉ &nbsp; parthp2172@gmail.com ↗</a><a href="tel:+919892764193">☎ &nbsp; +91 98927 64193</a><a href="https://www.linkedin.com/in/parthpanchall/" target="_blank" rel="noopener noreferrer">in &nbsp; LinkedIn profile ↗</a></div></div></section>
+<section id="contact" class="reveal"><div class="contact"><div><div class="mono">08 / CONTACT</div><h2>Let's build something<br>reliable together.</h2><p>Open to connecting about cloud infrastructure, Linux engineering, automation, and new opportunities.</p></div><div class="contactlinks">
+<a href="mailto:parthp2172@gmail.com">✉ &nbsp; parthp2172@gmail.com ↗</a>
+<a href="tel:+919892764193">☎ &nbsp; +91 98927 64193</a>
+<div class="socials" aria-label="Social media profiles">
+<a class="social-link" href="https://www.linkedin.com/in/parthpanchall/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4ZM3.4 9.4H7v11.1H3.4V9.4Zm5.8 0h3.4v1.5h.1c.5-.9 1.7-1.9 3.5-1.9 3.7 0 4.4 2.4 4.4 5.5v6h-3.6v-5.3c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9v5.4H9.2V9.4Z" fill="currentColor"/></svg>
+</a>
+<a class="social-link" href="https://x.com/PanchallParth" target="_blank" rel="noopener noreferrer" aria-label="X profile" title="X">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l7.3-8.4L1.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z" fill="currentColor"/></svg>
+</a>
+<a class="social-link" href="https://www.instagram.com/parth_panchalll/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" title="Instagram">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.7" r="1.2" fill="currentColor"/></svg>
+</a>
+</div>
+</div></div></section>
 </div>
 </main>
 <footer><div class="wrap foot"><span>© <span id="year"></span> Parth Panchal. Built with care.</span><span>Cloud infrastructure · Linux · Automation</span><a href="#home">Back to top ↑</a></div></footer>
