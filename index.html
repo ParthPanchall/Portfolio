@@ -145,10 +145,28 @@ footer{padding:28px 0;color:#718198;font-size:.76rem}.foot{display:flex;justify-
 .about-stats .stat:focus-within{transform:translateY(-5px);border-color:rgba(104,225,223,.6);box-shadow:0 14px 32px rgba(0,0,0,.28),0 0 18px rgba(104,225,223,.12)}
 @media(prefers-reduced-motion:reduce){.about-stats .stat{transition:none}}
 
+
+/* Brand hover interaction */
+.brand{
+  display:inline-flex;align-items:center;transform:translateY(0) scale(1);
+  transform-origin:left center;
+  transition:transform .28s cubic-bezier(.2,.8,.2,1),color .25s ease,text-shadow .25s ease;
+  will-change:transform;
+}
+@media (hover:hover) and (pointer:fine){
+  .brand:hover{
+    transform:translateY(-3px) scale(1.055);
+    color:var(--cyan);
+    text-shadow:0 0 18px rgba(104,225,223,.28);
+  }
+}
+.brand:focus-visible{outline:2px solid var(--cyan);outline-offset:5px;border-radius:4px}
+@media(prefers-reduced-motion:reduce){.brand{transition:none}}
+
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap navin"><a class="brand" href="#home">Parth Panchal<span></span></a><button class="menu" aria-label="Toggle navigation" id="menu" aria-expanded="false" aria-controls="links">☰</button><nav class="links" id="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav><a class="navcta" href="#contact">Let's connect ↗</a></div></header>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#home">Parth Panchal<span>.</span></a><button class="menu" aria-label="Toggle navigation" id="menu" aria-expanded="false" aria-controls="links">☰</button><nav class="links" id="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav><a class="navcta" href="#contact">Let's connect ↗</a></div></header>
 <main>
 <div class="wrap">
 <section class="hero" id="home" style="border:0">
@@ -156,7 +174,7 @@ footer{padding:28px 0;color:#718198;font-size:.76rem}.foot{display:flex;justify-
 <div class="eyebrow mono"><i class="pulse"></i> CLOUD • LINUX • AUTOMATION</div>
 <h1>Building reliable<br><span class="gradient">cloud systems.</span></h1>
 <p class="intro">I'm <strong>Parth Panchal</strong>, an Assistant System Engineer focused on Linux administration and Oracle Cloud Infrastructure. I help keep enterprise infrastructure secure, available, and running smoothly — with automation at the core.</p>
-<div class="actions"><a class="btn primary" href="#experience">Explore my work ↘</a><a class="btn secondary" href="#contact">Get in touch ↗</a></div>
+<div class="actions"><a class="btn primary" href="#experience">Explore my work ↘</a></div>
 <div class="hero-meta"><span>⌖ <b>Mumbai, India</b></span><span>◷ <b>August 2024 — Present</b></span></div>
 </div>
 <div class="visual" aria-label="Decorative terminal illustration"><div class="orb"></div><div class="terminal"><div class="termhead"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="termname">parth@cloud-infra:~</span></div><div class="termbody"><div><span class="cmd">$</span> whoami</div><div>parth-panchal</div><br><div><span class="cmd">$</span> cat focus.txt</div><div class="ok">Linux Administration</div><div class="ok">Oracle Cloud Infrastructure</div><div class="ok">Infrastructure Automation</div><br><div><span class="cmd">$</span> uptime</div><div>1500+ servers · 99.5%+ uptime</div><div class="dim">production / non-production</div><br><div><span class="cmd">$</span> <span class="ok">_</span></div></div></div></div>
